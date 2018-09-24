@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="686acccc-562d-4e0a-9bb6-9daac497a2df" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/apps/crud_alumnos/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/crud_alumnos/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/crudalumnos/alumnos_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/crudalumnos/alumnos_form.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,16 +40,16 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="455" />
-          <entry key="py" value="1472" />
+          <entry key="html" value="463" />
+          <entry key="py" value="1474" />
           <entry key="txt" value="126" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="455" />
+          <entry key="HTML" value="463" />
           <entry key="PLAIN_TEXT" value="126" />
-          <entry key="Python" value="1472" />
+          <entry key="Python" value="1474" />
         </counts>
       </usages-collector>
     </session>
@@ -59,7 +59,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PruebaVSemestre/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
+            <state relative-caret-position="-776">
               <caret line="80" column="16" selection-start-line="80" selection-start-column="16" selection-end-line="80" selection-end-column="16" />
             </state>
           </provider>
@@ -102,11 +102,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/crud_alumnos/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="30" selection-start-column="30" selection-end-column="30" />
+            <state relative-caret-position="720">
+              <caret line="30" column="75" selection-start-line="30" selection-start-column="75" selection-end-line="30" selection-end-column="75" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
-                <marker date="1537753652892" expanded="true" signature="138:143" ph="..." />
+                <marker date="1537756180760" expanded="true" signature="138:143" ph="..." />
               </folding>
             </state>
           </provider>
@@ -128,7 +128,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/crudalumnos/alumnos_form.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
+            <state relative-caret-position="10">
               <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
             </state>
           </provider>
@@ -137,10 +137,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/base/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="55" column="12" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="12" />
+            <state relative-caret-position="209">
+              <caret line="51" column="51" selection-start-line="51" selection-start-column="51" selection-end-line="51" selection-end-column="51" />
               <folding>
-                <element signature="e#1827#1833#0#HTML" expanded="true" />
+                <element signature="e#1816#1822#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -165,11 +165,11 @@
         <option value="$PROJECT_DIR$/PruebaVSemestre/settings.py" />
         <option value="$PROJECT_DIR$/templates/crudalumnos/alumno_form.html" />
         <option value="$PROJECT_DIR$/apps/crud_alumnos/urls.py" />
-        <option value="$PROJECT_DIR$/apps/crud_alumnos/forms.py" />
         <option value="$PROJECT_DIR$/apps/crud_alumnos/views.py" />
         <option value="$PROJECT_DIR$/PruebaVSemestre/urls.py" />
         <option value="$PROJECT_DIR$/apps/crud_alumnos/models.py" />
         <option value="$PROJECT_DIR$/templates/crudalumnos/alumnos_form.html" />
+        <option value="$PROJECT_DIR$/apps/crud_alumnos/forms.py" />
         <option value="$PROJECT_DIR$/templates/base/base.html" />
       </list>
     </option>
@@ -317,12 +317,12 @@
     <frame x="13" y="23" width="1280" height="717" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16962843" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16962843" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.328" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.328" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -356,24 +356,6 @@
     <entry file="file://$PROJECT_DIR$/apps/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/PruebaVSemestre/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="80" column="16" selection-start-line="80" selection-start-column="16" selection-end-line="80" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/crud_alumnos/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="30" selection-start-column="30" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-            <marker date="1537753652892" expanded="true" signature="138:143" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/crud_alumnos/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -382,6 +364,13 @@
             <element signature="e#0#35#0" expanded="true" />
             <marker date="1537753856792" expanded="true" signature="574:579" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/crudalumnos/alumnos_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10">
+          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -413,19 +402,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/crudalumnos/alumnos_form.html">
+    <entry file="file://$PROJECT_DIR$/PruebaVSemestre/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+        <state relative-caret-position="-776">
+          <caret line="80" column="16" selection-start-line="80" selection-start-column="16" selection-end-line="80" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/crud_alumnos/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="30" column="75" selection-start-line="30" selection-start-column="75" selection-end-line="30" selection-end-column="75" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+            <marker date="1537756180760" expanded="true" signature="138:143" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/base/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="55" column="12" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="12" />
+        <state relative-caret-position="209">
+          <caret line="51" column="51" selection-start-line="51" selection-start-column="51" selection-end-line="51" selection-end-column="51" />
           <folding>
-            <element signature="e#1827#1833#0#HTML" expanded="true" />
+            <element signature="e#1816#1822#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>

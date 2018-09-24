@@ -28,6 +28,6 @@ class alumnosForm(forms.ModelForm):
             'nombre': forms.TextInput(attrs={'class':'form-control'}),
             'apellido_paterno': forms.TextInput(attrs={'class':'form-control'}),
             'apellido_materno': forms.TextInput(attrs={'class':'form-control'}),
-            'fecha_nacimiento': forms.TextInput(attrs={'class':'form-control'}),
+            'fecha_nacimiento': forms.TextInput(attrs={'class':'datepicker'}),
             'carreras': forms.Select(attrs={'class':'form-control'}),
         }
