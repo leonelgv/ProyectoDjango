@@ -1,0 +1,70 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+
+	{% block extrastatic %}
+	{% endblock %}
+
+	<link rel="stylesheet" href="{% static 'css/materialize.min.css' %}">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<title>{% block title %}Document {% endblock %}</title>
+</head>
+<body>
+<div class="container">
+    {% block navbar %}
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <!-- Dropdown Structure -->
+                <ul id="dropdown1" class="dropdown-content">
+                    <li><a href="{% url 'alumnos:alumno_crear' %}">Registrar</a></li>
+                    <li><a href="#">Listar</a></li>
+                    <li><a href="#">Buscar/Filtrar</a></li>
+                </ul>
+                <nav>
+                    <div class="nav-wrapper">
+                        <a href="#" class="brand-logo">Inicio</a>
+                        <ul class="right hide-on-med-and-down">
+
+                            <li><a class="dropdown-trigger" href="#" data-target="dropdown1">Alumnos<i class="material-icons right">arrow_drop_down</i></a></li>
+                            <li><a href="http://www.leonet.mx/" onclick="pageTracker._link(this.href); return false;">Conoce al Desarrollador</a></li>
+                            <li><a href="#">Salir</a></li>
+                            <!-- Dropdown Trigger -->
+                        </ul>
+                    </div>
+                </nav>
+           	</div>
+        </div>
+
+	{% endblock %}
+
+
+	{% block content %}
+	<h4>	Bloque de contenido		</h4>
+	{% endblock %}
+
+
+	{% block footer %}
+	{% endblock%}
+</div>
+	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="{% static 'js/materialize.min.js' %}"></script>
+    <script>
+        $(document).ready(function() {
+            $(".dropdown-trigger").dropdown();
+            $('select').formSelect();
+            $('.collapsible').collapsible();
+            $('.button-collapse').sideNav({});
+            $('.materialboxed').materialbox();
+            $(".button-collapse").sideNav();
+            $('.scrollspy').scrollSpy();
+            $('.modal').modal();
+        });
+    </script>
+	{% block extrajs %}
+	{% endblock %}
+
+
+</body>
+</html>
