@@ -13,7 +13,7 @@ class carreras(models.Model):
         return '{}'.format(self.nombre)
 
 class alumnos(models.Model):
-    nocontrol = models.BigIntegerField(primary_key=True)
+    nocontrol = models.IntegerField(primary_key=True)
     nombre = models.CharField(max_length=50)
     apellido_paterno = models.CharField(max_length=50)
     apellido_materno = models.CharField(max_length=50)
@@ -27,7 +27,7 @@ class alumnos(models.Model):
 # python3 manage.py migrate
 
 # Paso 9. Insertar datos a la base de datos python3 manage.py shell
-# from apps.crud_paquetes.models from Paquetes
+# from apps.crud_alumnos.models import carreras
 
-# d = Paquetes(id = 1, nombre = 'Premium')
+# d = carreras(id = 1, nombre = 'Ingeniería en informática')
 # d.save()

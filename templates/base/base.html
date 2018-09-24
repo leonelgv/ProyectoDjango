@@ -65,7 +65,9 @@
             $(".dropdown-trigger").dropdown();
             $('select').formSelect();
             $('.collapsible').collapsible();
-            $('.datepicker').datepicker();
+            $('.datepicker').datepicker({
+                format: 'yyyy-mm-dd'
+            });
             $('.button-collapse').sideNav({});
             $('.materialboxed').materialbox();
             $(".button-collapse").sideNav();

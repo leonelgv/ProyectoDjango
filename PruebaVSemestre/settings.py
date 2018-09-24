@@ -79,9 +79,9 @@ WSGI_APPLICATION = 'PruebaVSemestre.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'escuela_justo_sierra',
-        'USER': 'emmanuel',
-        'PASSWORD': 'emmanuel',
+        'NAME': 'itca',
+        'USER': 'itca',
+        'PASSWORD': 'itca123',
         'HOST': 'localhost',
         'PORT': 5432,
     }
