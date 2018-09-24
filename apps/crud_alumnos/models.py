@@ -6,6 +6,9 @@ class carreras(models.Model):
     id = models.IntegerField(primary_key=True)
     nombre = models.CharField(max_length=100)
 
+# Paso 17. Se crea el metodo __str__ para mostrar las carreras en el formulario
+#          de alumnos
+
     def __str__(self):
         return '{}'.format(self.nombre)
 

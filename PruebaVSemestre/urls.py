@@ -18,6 +18,9 @@ from django.urls import path
 
 path('admin/', admin.site.urls),
 """
+# Paso 15. Se modifican las urls para agregar la app crud_alumnos
+# Paso 16. Se crea el archivo urls en el crud_alumnos
+
 from django.conf.urls import url, include
 
 urlpatterns = [
