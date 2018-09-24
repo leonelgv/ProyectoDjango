@@ -1,0 +1,52 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+
+<table class="striped">
+	<thead>
+		<tr>
+			<td>No. Control</td>
+			<td>Nombres</td>
+			<td>Apellido Paterno</td>
+            <td>Apellido Materno</td>
+			<td>Fecha de Nacimiento</td>
+            <td>Carrera</td>
+        </tr>
+
+	</thead>
+	<tbody>
+		{% if object_list %}
+		{% for alumnos in object_list %}
+		<tr>
+			<td>{{ alumnos.nocontrol }}</td>
+			<td>{{ alumnos.nombre }}</td>
+			<td>{{ alumnos.apellido_paterno }}</td>
+			<td>{{ alumnos.apellido_materno }}</td>
+			<td>{{ alumnos.fecha_nacimiento }}</td>
+			<td>{{ alumnos.carreras }}</td>
+			<td>
+				<a class="btn btn-primary" href="#">Ver</a>
+				<a class="btn btn-primary" href="#">Editar</a>
+				<a class="btn btn-danger" href="#">Eliminar</a>
+			</td>
+		</tr>
+		{% endfor %}
+
+		{% else %}
+		<h1>No hay registros de alumnos</h1>
+		{% endif %}
+	</tbody>
+</table>
+<ul class="pagination">
+	<li>
+		{% if page_obj.has_previous %}
+       	 <a href="?page={{ page_obj.previous_page_number }}">Anterior</a>
+		{% endif %}
+        </li>
+	<li>
+		{% if page_obj.has_next %}
+     	 <a href="?page={{ page_obj.next_page_number }}">Siguiente</a>
+    	{% endif %}
+    </li>
+</ul>
+{% endblock%}

@@ -4,10 +4,13 @@
 # Paso 13. Crear las carpetas 'base' y 'crudalumnos' en la carpeta templates
 # Paso 14. Crear los archivos base.html y alumnos_form.html y guardarlos en
 #          las carpetas 'base' y 'crudalumnos' respectivamente
+
+# Paso 17. Crear la vista para mostrar los alumnos
 from django.shortcuts import render
-from django.views.generic import CreateView
+from django.views.generic import CreateView, ListView
 from apps.crud_alumnos.models import alumnos
 from apps.crud_alumnos.forms import alumnosForm
+from django.urls import reverse_lazy
 
 # Create your views here.
 
@@ -15,3 +18,8 @@ class alumnosCreate(CreateView):
     model = alumnos
     form_class = alumnosForm
     template_name = 'crudalumnos/alumnos_form.html'
+    success_url = reverse_lazy('alumnos:alumnos_listar')
+
+class alumnosList(ListView):
+    queryset = alumnos.objects.order_by('nocontrol')
+    template_name = 'crudalumnos/alumnos_list.html'
