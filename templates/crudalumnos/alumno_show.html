@@ -1,0 +1,20 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+<div class="row">
+    <div class="col s12 m12 l12">
+        <p><strong>N&uacute;mero de control: </strong>{{ object.nocontrol }} </p>
+        <p><strong>Nombre: </strong>{{ object.nombre }} </p>
+        <p><strong>Apellido Paterno: </strong>{{ object.apellido_paterno }} </p>
+        <p><strong>Apellido Materno: </strong>{{ object.apellido_materno }} </p>
+        <p><strong>Fecha de Nacimiento: </strong>{{ object.fecha_nacimiento }} </p>
+        <p><strong>Carrera: </strong>{{ object.carreras }} </p>
+
+        <a class= "btn" href="{% url 'alumnos:alumnos_listar' %}">Ok</a>
+        <a class= "btn blue" href="{% url 'alumnos:alumno_editar' object.nocontrol%}"><i class="material-icons">create</i></a>
+        <a class="btn red" href="{% url 'alumnos:alumno_eliminar' object.nocontrol %}"><i class="material-icons">delete</i></a>
+    </div>
+</div>
+
+
+{% endblock %}

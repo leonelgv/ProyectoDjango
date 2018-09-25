@@ -25,8 +25,8 @@
 			        <td>{{ alumnos.fecha_nacimiento }}</td>
 			        <td>{{ alumnos.carreras }}</td>
 			        <td>
-				        <a class="btn" href="#"><i class="material-icons">visibility</i> </a>
-                        <a class="btn" href="{% url 'alumnos:alumno_editar' alumnos.nocontrol %}"><i class="material-icons">create</i></a>
+				        <a class="btn" href="{% url 'alumnos:alumno_mostrar' alumnos.nocontrol %}"><i class="material-icons">zoom_in</i></a>
+                        <a class="btn blue" href="{% url 'alumnos:alumno_editar' alumnos.nocontrol %}"><i class="material-icons">create</i></a>
                         <a class="btn red" href="{% url 'alumnos:alumno_eliminar' alumnos.nocontrol %}"><i class="material-icons">delete</i></a>
 			        </td>
 		        </tr>
@@ -41,15 +41,15 @@
 </div>
     <div class="row">
         <div class="col s12 m12 l12">
-            <ul class="pagination">
+            <ul class="pagination center">
 	            <li>
 		        {% if page_obj.has_previous %}
-       	            <a href="?page={{ page_obj.previous_page_number }}">Anterior</a>
+       	            <a class="btn blue" href="?page={{ page_obj.previous_page_number }}"><i class="material-icons">navigate_before</i></a>
 		        {% endif %}
                 </li>
 	            <li>
 		        {% if page_obj.has_next %}
-     	            <a href="?page={{ page_obj.next_page_number }}">Siguiente</a>
+     	            <a class="btn red" href="?page={{ page_obj.next_page_number }}"><i class="material-icons">navigate_next</i></a>
     	        {% endif %}
                 </li>
             </ul>

@@ -7,7 +7,7 @@
 
 # Paso 17. Crear la vista para mostrar los alumnos
 from django.shortcuts import render
-from django.views.generic import CreateView, ListView, DeleteView, UpdateView
+from django.views.generic import CreateView, ListView, DeleteView, UpdateView, DetailView
 from apps.crud_alumnos.models import alumnos
 from apps.crud_alumnos.forms import alumnosForm
 from django.urls import reverse_lazy
@@ -23,6 +23,7 @@ class alumnosCreate(CreateView):
 class alumnosList(ListView):
     queryset = alumnos.objects.order_by('nocontrol')
     template_name = 'crudalumnos/alumnos_list.html'
+    paginate_by = 10
 
 class alumnosUpdate(UpdateView):
     model = alumnos
@@ -34,3 +35,7 @@ class alumnosDelete(DeleteView):
     model = alumnos
     template_name = 'crudalumnos/alumnos_delete.html'
     success_url = reverse_lazy('alumnos:alumnos_listar')
+
+class alumnoShow(DetailView):
+    model = alumnos
+    template_name = 'crudalumnos/alumno_show.html'
