@@ -26,8 +26,8 @@
 			        <td>{{ alumnos.carreras }}</td>
 			        <td>
 				        <a class="btn btn-primary" href="#">Ver</a>
-				        <a class="btn btn-primary" href="#">Editar</a>
-				        <a class="btn btn-danger" href="#">Eliminar</a>
+				        <a class="btn btn-primary" href="{% url 'alumnos:alumno_editar' alumnos.nocontrol %}">Editar</a>
+				        <a class="btn btn-danger" href="{% url 'alumnos:alumno_eliminar' alumnos.nocontrol %}">Eliminar</a>
 			        </td>
 		        </tr>
 		        {% endfor %}
