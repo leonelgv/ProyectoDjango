@@ -25,9 +25,9 @@
 			        <td>{{ alumnos.fecha_nacimiento }}</td>
 			        <td>{{ alumnos.carreras }}</td>
 			        <td>
-				        <a class="btn btn-primary" href="#">Ver</a>
-				        <a class="btn btn-primary" href="{% url 'alumnos:alumno_editar' alumnos.nocontrol %}">Editar</a>
-				        <a class="btn btn-danger" href="{% url 'alumnos:alumno_eliminar' alumnos.nocontrol %}">Eliminar</a>
+				        <a class="btn" href="#"><i class="material-icons">visibility</i> </a>
+                        <a class="btn" href="{% url 'alumnos:alumno_editar' alumnos.nocontrol %}"><i class="material-icons">create</i></a>
+                        <a class="btn red" href="{% url 'alumnos:alumno_eliminar' alumnos.nocontrol %}"><i class="material-icons">delete</i></a>
 			        </td>
 		        </tr>
 		        {% endfor %}
