@@ -23,7 +23,7 @@ class alumnosCreate(CreateView):
 class alumnosList(ListView):
     queryset = alumnos.objects.order_by('nocontrol')
     template_name = 'crudalumnos/alumnos_list.html'
-    paginate_by = 10
+    paginate_by = 100
 
 class alumnosUpdate(UpdateView):
     model = alumnos
