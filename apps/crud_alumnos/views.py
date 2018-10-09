@@ -10,6 +10,7 @@ from django.shortcuts import render
 from django.views.generic import CreateView, ListView, DeleteView, UpdateView, DetailView
 from apps.crud_alumnos.models import alumnos
 from apps.crud_alumnos.forms import alumnosForm
+from apps.crud_alumnos.filters import alumnosFilter
 from django.urls import reverse_lazy
 
 # Create your views here.
@@ -39,3 +40,11 @@ class alumnosDelete(DeleteView):
 class alumnoShow(DetailView):
     model = alumnos
     template_name = 'crudalumnos/alumno_show.html'
+
+# Para agregar la vista de búsqueda, se instala primero
+# pip install django-filters
+
+def search(request):
+    alumnos_list = alumnos.objects.all()
+    alumnos_filter = alumnosFilter(request.GET, queryset=alumnos_list)
+    return render(request, 'crudalumnos/alumnos_list_filter.html', {'filter': alumnos_filter})
